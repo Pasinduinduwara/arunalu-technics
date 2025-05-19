@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1039099571040",
+    "project_id": "arunalu-technics",
+    "storage_bucket": "arunalu-technics.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039099571040:android:b9a528364ab309d2c68c05",
+        "android_client_info": {
+          "package_name": "com.company.arunalu_technics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZBZLRyo3HTakgtBgAd5Wk3xzuOlDWHcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

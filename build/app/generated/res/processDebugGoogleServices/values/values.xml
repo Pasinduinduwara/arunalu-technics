@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">1039099571040</string>
+    <string name="google_api_key" translatable="false">AIzaSyDZBZLRyo3HTakgtBgAd5Wk3xzuOlDWHcY</string>
+    <string name="google_app_id" translatable="false">1:1039099571040:android:b9a528364ab309d2c68c05</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDZBZLRyo3HTakgtBgAd5Wk3xzuOlDWHcY</string>
+    <string name="google_storage_bucket" translatable="false">arunalu-technics.firebasestorage.app</string>
+    <string name="project_id" translatable="false">arunalu-technics</string>
+</resources>

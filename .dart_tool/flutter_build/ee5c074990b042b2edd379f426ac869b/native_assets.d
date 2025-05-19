@@ -1,0 +1,1 @@
+ C:\\Users\\induwara\\arunalu_technics\\.dart_tool\\flutter_build\\ee5c074990b042b2edd379f426ac869b\\native_assets.yaml: 
