@@ -1,0 +1,50 @@
+name: arunalu
+description: A Flutter application for Arunalu Technics
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using flutter pub publish. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.6.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/logo.png
+    - assets/images/getStarted.jpg
+    - assets/images/facebook.png
+    - assets/images/apple.png
+    - assets/images/google.png
+    - assets/images/home_1.png
+    - assets/images/home_2.png
+    - assets/images/home3.png
+    - assets/images/booking_sucessful_alert.jpg
+    - assets/images/booking_unsucessful_alert.jpg
+    - assets/images/Card1.png
+    - assets/images/Card2.png
+    - assets/images/master_card.png
+    - assets/images/paypal.png
+    - assets/images/cash_on_delivery.png
+    - assets/images/headphone1.png
+    - assets/images/headphone2.png
+    - assets/images/headphone3.png
+    - assets/images/cart_image.png
+    - assets/images/order_confirm.png
+    - assets/images/backbutton.png
+    - assets/images/led_tv.jpg
+    - assets/images/Remote1.png
