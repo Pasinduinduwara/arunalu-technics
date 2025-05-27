@@ -156,3 +156,53 @@ class TermsConditionsScreen extends StatelessWidget {
   }
 }
 
+class TermItem extends StatelessWidget {
+  final int number;
+  final String title;
+  final String description;
+
+  const TermItem({
+    Key? key,
+    required this.number,
+    required this.title,
+    required this.description,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          '$number.',
+          style: const TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(width: 8),
+        Expanded(
+          child: RichText(
+            text: TextSpan(
+              style: const TextStyle(
+                fontSize: 20,
+                color: Colors.black,
+              ),
+              children: [
+                TextSpan(
+                  text: '$title ',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                TextSpan(
+                  text: description,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
