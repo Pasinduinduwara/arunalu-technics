@@ -168,3 +168,152 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
+                     const SizedBox(height: 4),
+                    const Row(
+                      children: [
+                        Text(
+                          'Rs.2500.00',
+                          style: TextStyle(
+                            color: Color(0xFF0030AD),
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          '|',
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 24,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+                    Row(
+                      children: [
+                        for (int i = 0; i < _availableColors.length; i++)
+                          GestureDetector(
+                            onTap: () {
+                              setState(() {
+                                _selectedColorIndex = i;
+                              });
+                            },
+                            child: Container(
+                              margin: const EdgeInsets.only(right: 12),
+                              width: 40,
+                              height: 40,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: _availableColors[i],
+                                border: _selectedColorIndex == i
+                                    ? Border.all(
+                                  color: Colors.black,
+                                  width: 2,
+                                )
+                                    : null,
+                              ),
+                            ),
+                          ),
+                        const Spacer(),
+                        const Icon(
+                          Icons.star,
+                          color: Colors.amber,
+                          size: 24,
+                        ),
+                        const SizedBox(width: 4),
+                        const Text(
+                          '4.8',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          '(231)',
+                          style: TextStyle(
+                            color: Colors.grey[600],
+                            fontSize: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    const Spacer(),
+
+                    // Action buttons
+                    Column(
+                      children: [
+                        SizedBox(
+                          width: double.infinity,
+                          height: 56,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              elevation: 0,
+                            ),
+                            child: const Text(
+                              'Add to cart',
+                              style: TextStyle(fontSize: 18),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        SizedBox(
+                          width: double.infinity,
+                          height: 56,
+                          child: ElevatedButton(
+                            onPressed: () {},
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF0030AD),
+                              foregroundColor: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              elevation: 0,
+                            ),
+                            child: const Text(
+                              'Buy Now',
+                              style: TextStyle(fontSize: 18),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 24),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  /// ✅ Fix: This method is now properly placed **inside** the _ProductDetailPageState class.
+  Widget _buildCircularButton({
+    required IconData icon,
+    required VoidCallback onPressed,
+  }) {
+    return Container(
+      width: 50,
+      height: 50,
+      decoration: BoxDecoration(
+        color: Colors.grey[100],
+        shape: BoxShape.circle,
+      ),
+      child: IconButton(
+        icon: Icon(icon, color: Colors.grey[600]),
+        onPressed: onPressed,
+      ),
+    );
+  }
+}
